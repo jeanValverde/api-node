@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
 });
 
 
-//crear 
+//crear c
 router.post('/create', [
     check('title').exists(),
     check('autor').exists(),

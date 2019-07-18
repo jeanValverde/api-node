@@ -3,23 +3,25 @@ const app = express();
 
 const morgan = require('morgan');
 
-//configuraciones
-const PORT_DEFAULT = 3000; //puerto por default 
-app.set('port', process.env.PORT || PORT_DEFAULT); //puerto default o el disponible
-app.use(express.urlencoded({extended: false})) //preparar para recibir form html
-app.set('json spaces', 2); //indentar formato json 
+//setting 
+const PORT_DEFAULT = 3000; //port default  
+app.set('port', process.env.PORT || PORT_DEFAULT); //port default o el enable 
+app.use(express.urlencoded({extended: false})) //pull apart for get form html
+app.set('json spaces', 2); //formatter json 
 
-const RUTA_DEFAULT = '/api/';
+//constants 
+const ROUTE_DEFAULT = '/api/';
 
-app.use(morgan('dev')); //ejecuar en desarrollo para cada cambio 
-app.use(express.json()); //preparar la app para uso de json 
+app.use(morgan('dev')); //run develop 
+
+app.use(express.json()); //prepare app for json 
 
 //router 
-app.use(RUTA_DEFAULT , require('./routes/index.js')); //principal 
+app.use('/', require('./routes/index.js')); //main 
 
-app.use(RUTA_DEFAULT + 'libros' , require('./routes/libros.js')); //api de libros 
+app.use(ROUTE_DEFAULT + 'books' , require('./routes/books.js')); //api books 
 
 
 app.listen(app.get('port'), () => {
-  console.log('Servidor en el puerto ' + app.get('port'));
+  console.log('Server on port ' + app.get('port'));
 });

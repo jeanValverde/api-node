@@ -4,7 +4,7 @@ const router = Router();
 
 router.get('/', (req, res) => {
     
-    res.json({"mensaje" : "Api con node!"});
+    res.json({"message" : "Api con node!"});
 });
 
 

@@ -2,32 +2,32 @@
     {
         "id": 1,
         "title": "El Principito", 
-        "autor": "Marcos",
-        "paginas": 120, 
+        "author": "Marcos",
+        "pages": 120, 
         "editorial": "Planeta", 
         "isbn": "123-132-534-765"
     },
     {
         "id": 2,
         "title": "Harry Potter", 
-        "autor": "JK",
-        "paginas": 400, 
+        "author": "JK",
+        "pages": 400, 
         "editorial": "Planeta", 
         "isbn": "423-643-423-765"
     },
     {
         "id": 3,
         "title": "Cien años de soledad", 
-        "autor": "Gabriel Garcia Marquez",
-        "paginas": 170, 
+        "author": "Gabriel Garcia Marquez",
+        "pages": 170, 
         "editorial": "Planeta", 
         "isbn": "123-132-534-765"
     },
     {
         "id": 4,
         "title": "El corazon delator", 
-        "autor": "Gabriel Garcia Marquez",
-        "paginas": 15, 
+        "author": "Gabriel Garcia Marquez",
+        "pages": 15, 
         "editorial": "Planeta", 
         "isbn": "123-132-534-765"
     }
